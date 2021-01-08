@@ -1,0 +1,25 @@
+
+<table style=" background: green; width: 60%; text-align: center; " >
+        <tr style="background-color: gray; 
+                    padding: 8px;
+                    color: white;
+                    width: 100%;
+                    font-size: 24px;">
+            <th >ID</th>
+            <th >NAME</th>
+            <th >COST</th>
+        </tr>
+        <tr *ngFor="let product of products;"
+        style="font-size: 20px; color: white;
+                border: 1px solid gray;">
+            <th >{{ product.p_id }}</th>
+            <td>
+                {{ product.p_name }}
+            </td>
+            <td>{{ product.p_cost }}</td>
+        </tr>
+</table>
+
+<script>
+console.log(product)
+</script>
