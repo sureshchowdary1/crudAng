@@ -1,5 +1,7 @@
 
-<table style=" background: green; width: 60%; text-align: center; " >
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<table style=" background: green; width: 60%; text-align: center; margin: 0 auto; border-radius: 6px; padding-bottom: 50px;" >
         <tr style="background-color: gray; 
                     padding: 8px;
                     color: white;
@@ -8,6 +10,8 @@
             <th >ID</th>
             <th >NAME</th>
             <th >COST</th>
+            <th >UPDATE</th>
+            <th >DELETE</th>
         </tr>
         <tr *ngFor="let product of products;"
         style="font-size: 20px; color: white;
@@ -17,9 +21,11 @@
                 {{ product.p_name }}
             </td>
             <td>{{ product.p_cost }}</td>
+            <td><a href="">
+                <i class="fa fa-pencil-square-o" ></i>
+            </a></td>
+            <td><a href="">
+                <i class="fa fa-trash-o"></i>
+            </a></td>
         </tr>
 </table>
-
-<script>
-console.log(product)
-</script>

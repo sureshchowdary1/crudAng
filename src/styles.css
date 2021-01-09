@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+.fa-pencil-square-o{
+    color: rgb(78, 147, 226);
+}
+
+.fa-trash-o{
+    color: rgb(252, 70, 70);
+}

@@ -9,10 +9,14 @@ import { EffectsModule } from '@ngrx/effects';
 import { reducer } from './store/Preducer';
 import { ProductsEffect } from './store/Peffects'
 import { ProductsServices } from './services/products.service';
+import { PostProductComponent } from './postProducts/post-products.component';
+import { mainComponent } from './mainPage/main-page.component';
 @NgModule({
   declarations: [
     AppComponent,
-    GetProductComponent
+    GetProductComponent,
+    PostProductComponent,
+    mainComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,6 @@ import { ProductsServices } from './services/products.service';
 
   ],
   providers: [ProductsServices],
-  bootstrap: [GetProductComponent]
+  bootstrap: [mainComponent]
 })
 export class AppModule { }

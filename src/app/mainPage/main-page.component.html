@@ -1,0 +1,90 @@
+
+<style>
+
+    /* tags manipulated using JS code*/
+    products{
+        display: none;
+    }
+
+    products.show{
+        display: inline;
+    }
+    
+    postProduct{
+        display: none;
+    }
+
+    postProduct.show{
+        display: inline;
+    }
+
+    /*Custom styles*/
+
+    h2{
+        margin-left: 60px;
+    }
+
+    h4{
+        margin-right: 40px;
+    }
+
+    .getBtn{
+        cursor: pointer; 
+        background: darkblue;
+        color: #fff; 
+        padding: 0px 10px;
+        margin: 10px 80px 0 0 ; 
+        border: none; 
+        outline: none; 
+        border-radius: 10px;
+    }
+
+    .insBtn{
+        cursor: pointer;
+        background: blueviolet;
+        color: chartreuse;
+        font-size: 24px;
+        border: none; 
+        outline: none; 
+        border-radius: 50px;
+    }
+
+    .postPr{
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+</style>
+
+<div style="background: chocolate; padding-bottom: 30px;">
+<div class="get" style="display:flex; justify-content: space-between">
+    <h2 >To view Products details click the button</h2>
+<button class="getBtn"
+     (click)="GetPro()">   Get Products</button>
+</div>
+<br>
+<hr>
+<br>
+<div>
+    <products id="products"></products>
+</div>
+</div>
+
+<br>
+
+<div>
+    <div class="postPr">
+        <h4>To Add new Row 'click +'</h4>
+        <button class="insBtn" 
+             (click)="InsPro()"> <i class="fa fa-plus"></i> </button>
+    </div>
+
+
+    <div class="postProducts">
+        <postProduct></postProduct>
+    </div>
+</div>
+
